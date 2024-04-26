@@ -66,6 +66,7 @@ public:
 
 int main() {
     // Create a graph
+// 7 6 0
     int n, m, start_node;
 	cout << "Enter No of Node,Edges,and start node:" ;
 	cin >> n >> m >> start_node;
