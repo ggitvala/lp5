@@ -1,1 +1,5 @@
 https://gunjandeshmukh1011.wordpress.com/lp-v/
+
+
+g++ -fopenmp program.cpp -o program
+./program
