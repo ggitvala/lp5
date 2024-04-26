@@ -95,31 +95,3 @@ int main() {
 
     return 0;
 }
-
-
-
-
-
-// dfs with stack
-void dfs(int startVertex) {
-        vector<bool> visited(V, false);
-        stack<int> s;
-
-        visited[startVertex] = true;
-        s.push(startVertex);
-
-        while (!s.empty()) {
-            int v = s.top();
-            s.pop();
-            cout << v << " ";
-
-            // Visit all adjacent vertices of v
-            for (int i = 0; i < adj[v].size(); ++i) {
-                int n = adj[v][i];
-                if (!visited[n]) {
-                    visited[n] = true;
-                    s.push(n);
-                }
-            }
-        }
-    }
